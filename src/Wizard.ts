@@ -37,7 +37,7 @@ export class Wizard {
     });
     this._spellBook.spells = this._spellBook.spells.filter((e) => e !== spell);
     if (!isSpellPresent) {
-      throw new Error("Spell NOT present !!!");
+      throw new Error(`Spell of type ${spellName} NOT present !!!`);
     }
   }
 

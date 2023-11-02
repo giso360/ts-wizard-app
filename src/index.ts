@@ -54,7 +54,7 @@ const step6 = () => {
   console.log("\nSTEP#6");
   console.log(`${fireWizard.wizardName} casts a Big-Bang Spell...`);
   try {
-    fireWizard.castOneSpell("Big Bang");
+    fireWizard.castOneSpell(FireSpellType.Big_Bang);
   } catch (error) {
     console.log((error as Error).message);
   }
@@ -70,7 +70,7 @@ const step8 = () => {
   console.log("\nSTEP#8");
   console.log(`${frostWizard.wizardName} casts a blizzard spell...`);
   try {
-    frostWizard.castOneSpell("Blizzard");
+    frostWizard.castOneSpell(FrostSpellType.Blizzard);
   } catch (error) {
     console.log((error as Error).message);
   }
