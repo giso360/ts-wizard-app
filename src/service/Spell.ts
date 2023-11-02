@@ -1,6 +1,5 @@
 export abstract class Spell {
-  abstract cast(): void;
-  abstract castByName(spellName: string): void;
+  abstract castSpellByName(spellName: string): void;
   private _spellName: string;
 
   constructor(spellName: string) {

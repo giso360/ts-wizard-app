@@ -30,7 +30,7 @@ export class Wizard {
     let spell: Spell;
     this._spellBook.spells.forEach((sp) => {
       if (sp.spellName === spellName) {
-        sp.castByName(spellName);
+        sp.castSpellByName(spellName);
         spell = sp;
         isSpellPresent = true;
       }
@@ -42,7 +42,7 @@ export class Wizard {
   }
 
   castAllSpells(): void {
-    this._spellBook.spells.forEach((sp) => sp.castByName(sp.spellName));
+    this._spellBook.spells.forEach((sp) => sp.castSpellByName(sp.spellName));
     this._spellBook.spells = [];
   }
 }

@@ -8,11 +8,7 @@ export class FrostSpell extends Spell {
     this.damage = 0.5;
   }
 
-  cast(): void {
-    console.log(`A frost spell is cast !!! ${this.damage} slow-down for enemy`);
-  }
-
-  castByName(spellName: string): void {
+  castSpellByName(spellName: string): void {
     console.log(
       `A frost spell is cast of type ${spellName} !!! ${this.damage} for enemy`
     );

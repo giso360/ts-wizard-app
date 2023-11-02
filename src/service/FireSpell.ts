@@ -8,11 +8,7 @@ export class FireSpell extends Spell {
     this.damage = 20;
   }
 
-  cast(): void {
-    console.log(`A fire spell is cast !!! ${this.damage} for enemy`);
-  }
-
-  castByName(spellName: string): void {
+  castSpellByName(spellName: string): void {
     console.log(
       `A fire spell is cast of type ${spellName} !!! ${this.damage} for enemy`
     );
